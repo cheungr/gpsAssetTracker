@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Internal Asset Track</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/sb-admin-2.css" rel="stylesheet">
+    <link href="../static/metisMenu.min.css" rel="stylesheet">
+    <link href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    {{plinemap.js}}
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Internal Asset Track 0.01</a>
+            </div>
+			<ul class="nav navbar-top-links navbar-right">
+             	<li>
+					<a class="navbar-brand " href="/add">
+						<i class="fa fa-plus"> Add Tracker</i>
+					</a>
+				</li>   
+			
+            </ul>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="../" style="color:green"><i class="fa fa-archive fa-fw"></i> TTIAKtmp</a>
+                        </li>
+                        {{ trackerlist|safe }}                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-20">
+                    <h1 class="page-header">Dashboard</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-20">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-map fa-fw"></i> DataView:
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            {{ plinemap.html }}
+						  {{ selectsomething|safe }}
+                        </div>
+                        <!-- /.panel-body -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../static/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../static/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../static/sb-admin-2.js"></script>
+
+</body>
+
+</html>
+

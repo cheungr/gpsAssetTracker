@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Internal Asset Track</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/sb-admin-2.css" rel="stylesheet">
+    <link href="../static/metisMenu.min.css" rel="stylesheet">
+    <link href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Internal Asset Track 0.01</a>
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-20">
+                    <h1 class="page-header">Add a Tracker</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-20">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-plus-circle fa-fw"></i> Tracker Form:
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                                <p align="center" style="color:red" id="errorNotice"> </p>
+                                <form class="form-onboard" id="onboardForm">
+                                    <label for="inputDevicekey" class="sr-only">DeviceKey</label>
+                                    <input type="devicekey" name="inputDevicekey" id="inputDevicekey" class="form-control" placeholder="DeviceKey" required autofocus>
+
+                                    <label for="inputName" class="sr-only">Nickname</label>
+                                    <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Nickname" required autofocus>
+
+                                    <label for="inputDescription" class="sr-only">Describe the asset</label>
+                                    <input type="description" name="inputDescription" id="inputDescription" class="form-control" placeholder="Description" required>
+                                    
+                                    <label for="inputEmail" class="sr-only">Email address</label>
+                                    <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+                                    <label for="inputMaxtilt" class="sr-only">Max Tilt Degree</label>
+                                    <input type="maxtilt" name="inputMaxtilt" id="inputMaxtilt" class="form-control" placeholder="Tilt Degree" required autofocus>
+
+
+                                    <button id="btnAddTracker" class="btn btn-lg btn-primary btn-block" type="button">Add Tracker</button>
+                                </form>
+                        </div>
+                        <!-- /.panel-body -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../static/jquery-1.11.2.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../static/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../static/sb-admin-2.js"></script>
+
+    <!-- Form JavaScript -->
+    <script src="../static/requests.js"></script>
+
+
+</body>
+
+</html>
+
